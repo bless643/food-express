@@ -1,0 +1,1215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" href="./images/favicon.ico" />
+    <title>FoodExpress</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet" />
+    <link href="./css/style.css" rel="stylesheet" type="text/css" />
+    <!-- Fontawesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- AOS CDN -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/main.js"></script>
+  </head>
+  <body>
+    <!-- body code goes here -->
+    <div class="main-container">
+      <nav
+        class="navbar px-4 navbar-expand-lg navbar-light shadow-sm bg-light text-light"
+        data-aos="fade-down"
+        data-aos-delay="500"
+        data-aos-duration="1000"
+      >
+        <a class="navbar-brand" href="index.html">
+          <img src="images/logo.png" alt="FoodExpress-Logo" height="40" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent1"
+          aria-controls="navbarSupportedContent1"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown1"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Meals
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                <a class="dropdown-item" href="#">Vegetarian</a>
+                <a class="dropdown-item" href="#">Non Vegetarian</a>
+              </div>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Orders</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact Us</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <button
+              class="btn btn-main my-2 mr-2 my-sm-0 rounded-pill"
+              type="submit"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi mr-1 bi-person"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"
+                />
+              </svg>
+              Login
+            </button>
+            <button
+              class="btn btn-outline-warning my-2 my-sm-0 rounded-pill"
+              type="button"
+            >
+              Sign Up
+            </button>
+          </form>
+        </div>
+      </nav>
+      <div
+        id="carouselExampleIndicators1"
+        class="carousel slide"
+        data-ride="carousel"
+        data-aos="zoom-in"
+        data-aos-duration="800"
+      >
+        <ol class="carousel-indicators">
+          <li
+            data-target="#carouselExampleIndicators1"
+            data-slide-to="0"
+            class="carousel-dot rounded active"
+          ></li>
+          <li
+            data-target="#carouselExampleIndicators1"
+            data-slide-to="1"
+            class="carousel-dot"
+          ></li>
+          <li
+            data-target="#carouselExampleIndicators1"
+            data-slide-to="2"
+            class="carousel-dot"
+          ></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              class="d-block mx-auto img-fluid"
+              src="images/penne-pasta-tomato.jpg"
+              alt="First slide"
+            />
+            <div class="carousel-caption">
+              <h4>Unleash Your Taste Buds with Explosive Flavors!</h4>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              class="d-block mx-auto img-fluid"
+              src="images/food-dilivery.jpg"
+              alt="Second slide"
+            />
+            <div class="carousel-caption">
+              <h4>We bring your favorite meals right to your doorstep!</h4>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              class="d-block mx-auto img-fluid"
+              src="images/mobile-food.jpg"
+              alt="Third slide"
+            />
+            <div class="carousel-caption">
+              <h4>
+                Discover a world of culinary delights at your fingertips with
+                our mobile app.
+              </h4>
+            </div>
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleIndicators1"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleIndicators1"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <div class="container">
+        <div class="row mt-4">
+          <div
+            class="col-lg-6 app-info"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <h2 class="mt-4 font-weight-bold mb-5">Discover Our App</h2>
+            <h3 class="app-sub-title">
+              Why stay hungry when you can order form
+              <span class="brand-name">FoodExpress</span>
+            </h3>
+            <h6>
+              Download the <span class="brand-name">FoodExpress</span> app now
+              on
+            </h6>
+            <div class="button-group">
+              <button
+                class="btn btn-main my-2 mr-2 my-sm-0 rounded-pill"
+                type="button"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi mr-1 bi-google-play"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M14.222 9.374c1.037-.61 1.037-2.137 0-2.748L11.528 5.04 8.32 8l3.207 2.96 2.694-1.586Zm-3.595 2.116L7.583 8.68 1.03 14.73c.201 1.029 1.36 1.61 2.303 1.055l7.294-4.295ZM1 13.396V2.603L6.846 8 1 13.396ZM1.03 1.27l6.553 6.05 3.044-2.81L3.333.215C2.39-.341 1.231.24 1.03 1.27Z"
+                  />
+                </svg>
+                PlayStore
+              </button>
+              <button
+                class="btn-appstore btn border shadow-sm rounded-pill mr-2 my-2 my-sm-0"
+                type="button"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi mr-1 bi-apple"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z"
+                  />
+                  <path
+                    d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z"
+                  />
+                </svg>
+                App Store
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000">
+            <img src="images/app.png" class="img-fluid" alt="" />
+          </div>
+        </div>
+        <div class="meals-section">
+          <h2 class="mt-4 font-weight-bold mb-5">
+            Savor Our Delicious Meal Selection
+          </h2>
+          <div class="container">
+            <div
+              class="row items row-cols-1 row-cols-sm-2 row-cols-lg-4"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <div class="col card-item relative">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-heart-fill heart-icon"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"
+                  />
+                </svg>
+                <div class="card-image">
+                  <img
+                    src="https://img.freepik.com/free-photo/grilled-cheeseburger-sesame-bun-with-fresh-toppings-generative-ai_188544-12325.jpg"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <h4 class="item-title">Classic Cheeseburger</h4>
+                <h5 class="item-sub-title">
+                  Classic cheeseburger with a juicy beef patty, melted cheddar
+                  cheese, and fresh toppings, served on a toasted sesame seed
+                  bun.
+                </h5>
+                <div class="food-info">
+                  <div class="flex justify-content-around">
+                    <span class="badge badge-success">Vegetarian</span>
+                    <span class="badge badge-danger">Spicy</span>
+                  </div>
+                  <div class="ratings">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                  </div>
+                </div>
+
+                <div class="card-footer-group">
+                  <span class="item-price">$9.99</span>
+                  <button
+                    class="btn btn-main my-2 my-sm-0 rounded-pill"
+                    type="button"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi mr-1 bi-cart-plus"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z"
+                      />
+                      <path
+                        d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"
+                      />
+                    </svg>
+                    Order Now
+                  </button>
+                </div>
+              </div>
+              <div class="col card-item relative">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-heart-fill heart-icon"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"
+                  />
+                </svg>
+                <div class="card-image">
+                  <img
+                    src="https://img.freepik.com/free-photo/fresh-pasta-with-hearty-bolognese-parmesan-cheese-generated-by-ai_188544-9469.jpg"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <h4 class="item-title">Spicy Garlic Noodles</h4>
+                <h5 class="item-sub-title">
+                  Mouthwatering stir-fried noodles tossed in a zesty blend of
+                  garlic, soy sauce, and chili oil, delivering a fiery kick to
+                  your taste buds.
+                </h5>
+                <div class="food-info">
+                  <div class="flex justify-content-around">
+                    <span class="badge badge-danger">Spicy</span>
+                  </div>
+                  <div class="ratings">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                  </div>
+                </div>
+                <div class="card-footer-group">
+                  <span class="item-price">$12.99</span>
+                  <button
+                    class="btn btn-main my-2 my-sm-0 rounded-pill"
+                    type="button"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi mr-1 bi-cart-plus"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z"
+                      />
+                      <path
+                        d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"
+                      />
+                    </svg>
+                    Order Now
+                  </button>
+                </div>
+              </div>
+              <div class="col card-item relative">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-heart-fill heart-icon"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"
+                  />
+                </svg>
+                <div class="card-image">
+                  <img
+                    src="https://img.freepik.com/free-photo/mexican-tacos-with-beef-tomato-sauce-salsa_2829-14227.jpg"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <h4 class="item-title">Spicy Beef Tacos</h4>
+                <h5 class="item-sub-title">
+                  Bite into the fiery goodness of our savory beef tacos, filled
+                  with seasoned ground beef, crunchy lettuce, diced tomatoes,
+                  shredded cheese, and drizzled with a spicy chipotle sauce.
+                </h5>
+                <div class="food-info">
+                  <div class="flex justify-content-around">
+                    <span class="badge badge-dark">Meat</span>
+                    <span class="badge badge-danger">Spicy</span>
+                  </div>
+                  <div class="ratings">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                  </div>
+                </div>
+
+                <div class="card-footer-group">
+                  <span class="item-price">$10.99</span>
+                  <button
+                    class="btn btn-main my-2 my-sm-0 rounded-pill"
+                    type="button"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi mr-1 bi-cart-plus"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z"
+                      />
+                      <path
+                        d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"
+                      />
+                    </svg>
+                    Order Now
+                  </button>
+                </div>
+              </div>
+              <div class="col card-item relative">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-heart-fill heart-icon"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"
+                  />
+                </svg>
+                <div class="card-image">
+                  <img
+                    src="https://img.freepik.com/free-photo/baked-lasagna-with-gourmet-italian-bolognese-sauce-generated-by-ai_188544-9608.jpg"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <h4 class="item-title">Baked Lasagna</h4>
+                <h5 class="item-sub-title">
+                  Indulge in layers of perfectly cooked pasta, rich tomato
+                  sauce, creamy ricotta cheese, and a savory blend of
+                  vegetables, all baked to perfection and topped with melted
+                  mozzarella cheese.
+                </h5>
+                <div class="food-info">
+                  <div class="flex justify-content-around">
+                    <span class="badge badge-success">Vegetarian</span>
+                  </div>
+                  <div class="ratings">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                  </div>
+                </div>
+                <div class="card-footer-group">
+                  <span class="item-price">$14.99</span>
+                  <button
+                    class="btn btn-main my-2 my-sm-0 rounded-pill"
+                    type="button"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi mr-1 bi-cart-plus"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z"
+                      />
+                      <path
+                        d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"
+                      />
+                    </svg>
+                    Order Now
+                  </button>
+                </div>
+              </div>
+              <div class="col card-item relative">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-heart-fill heart-icon"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"
+                  />
+                </svg>
+                <div class="card-image">
+                  <img
+                    src="https://img.freepik.com/free-photo/samsa-samosas-with-meat_658428-360.jpg"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
+                <h4 class="item-title">Vegetable Samosa</h4>
+                <h5 class="item-sub-title">
+                  Delight in our crispy golden pastry filled with a savory
+                  medley of spiced potatoes, peas, and aromatic herbs, perfect
+                  for a flavorful and satisfying snack or appetizer.
+                </h5>
+                <div class="food-info">
+                  <div class="flex justify-content-around">
+                    <span class="badge badge-success">Vegetarian</span>
+                    <span class="badge badge-danger">Spicy</span>
+                  </div>
+                  <div class="ratings">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                  </div>
+                </div>
+
+                <div class="card-footer-group">
+                  <span class="item-price">$4.99</span>
+                  <button
+                    class="btn btn-main my-2 my-sm-0 rounded-pill"
+                    type="button"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi mr-1 bi-cart-plus"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z"
+                      />
+                      <path
+                        d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"
+                      />
+                    </svg>
+                    Order Now
+                  </button>
+                </div>
+              </div>
+              <div class="col card-item relative">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-heart-fill heart-icon"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"
+                  />
+                </svg>
+                <div class="card-image">
+                  <img
+                    src="https://img.freepik.com/free-photo/plate-italian-seafood-shrimp-noodles_1205-11873.jpg"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <h4 class="item-title">Seafood Pasta Alfredo</h4>
+                <h5 class="item-sub-title">
+                  Dive into a seafood lover's delight with our luscious pasta
+                  Alfredo, featuring a tantalizing combination of succulent
+                  shrimp, tender scallops, and juicy crab meat, all tossed in a
+                  creamy Parmesan sauce.
+                </h5>
+                <div class="food-info">
+                  <div class="flex justify-content-around">
+                    <span class="badge badge-info">Seafood</span>
+                    <span class="badge badge-danger">Spicy</span>
+                  </div>
+                  <div class="ratings">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                  </div>
+                </div>
+
+                <div class="card-footer-group">
+                  <span class="item-price">$16.99</span>
+                  <button
+                    class="btn btn-main my-2 my-sm-0 rounded-pill"
+                    type="button"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi mr-1 bi-cart-plus"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z"
+                      />
+                      <path
+                        d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"
+                      />
+                    </svg>
+                    Order Now
+                  </button>
+                </div>
+              </div>
+              <div class="col card-item relative">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-heart-fill heart-icon"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"
+                  />
+                </svg>
+                <div class="card-image">
+                  <img
+                    src="https://img.freepik.com/free-photo/salads-with-quinoa-arugula-radish-tomatoes-cucumber-bowl-wooden-table-healthy-food-diet-detox-vegetarian-concept_2829-6842.jpg"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <h4 class="item-title">Quinoa Salad</h4>
+                <h5 class="item-sub-title">
+                  Enjoy a nutritious and refreshing bowl of our organic quinoa
+                  salad, packed with a colorful medley of fresh vegetables,
+                  tangy feta cheese, and a zesty lemon vinaigrette.
+                </h5>
+                <div class="food-info">
+                  <div class="flex justify-content-around">
+                    <span class="badge badge-success">Vegetarian</span>
+                    <span class="badge badge-warning">Organic</span>
+                  </div>
+                  <div class="ratings">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                  </div>
+                </div>
+
+                <div class="card-footer-group">
+                  <span class="item-price">$9.99</span>
+                  <button
+                    class="btn btn-main my-2 my-sm-0 rounded-pill"
+                    type="button"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi mr-1 bi-cart-plus"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z"
+                      />
+                      <path
+                        d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"
+                      />
+                    </svg>
+                    Order Now
+                  </button>
+                </div>
+              </div>
+              <div class="col card-item relative">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-heart-fill heart-icon"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"
+                  />
+                </svg>
+                <div class="card-image">
+                  <img
+                    src="https://img.freepik.com/free-photo/pizza-pepperoni-table_140725-5396.jpg"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <h4 class="item-title">Pepperoni Pizza</h4>
+                <h5 class="item-sub-title">
+                  Treat yourself to our mouthwatering pepperoni pizza, featuring
+                  a golden crust topped with zesty tomato sauce, generous
+                  amounts of savory pepperoni slices, and melted mozzarella
+                  cheese, delivering a perfect balance of flavors.
+                </h5>
+                <div class="food-info">
+                  <div class="flex justify-content-around">
+                    <span class="badge badge-dark">Meat</span>
+                    <span class="badge badge-danger">Spicy</span>
+                  </div>
+                  <div class="ratings">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                  </div>
+                </div>
+                <div class="card-footer-group">
+                  <span class="item-price">$14.99</span>
+                  <button
+                    class="btn btn-main my-2 my-sm-0 rounded-pill"
+                    type="button"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi mr-1 bi-cart-plus"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z"
+                      />
+                      <path
+                        d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"
+                      />
+                    </svg>
+                    Order Now
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="pagination-section">
+              <ul class="pagination">
+                <li class="page-item disabled">
+                  <a class="page-link">Previous</a>
+                </li>
+                <li class="page-item active">
+                  <a class="page-link" href="#">1</a>
+                </li>
+                <li class="page-item" aria-current="page">
+                  <a class="page-link" href="#">2</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">...</a></li>
+                <li class="page-item"><a class="page-link" href="#">8</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#">Next</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="testimonials">
+          <h2 class="mt-4 font-weight-bold mb-5">What Our Customers Say</h2>
+          <div
+            class="row items row-cols-1 row-cols-sm-2 row-cols-lg-3"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <div class="col review-card">
+              <img
+                class="review-user-image"
+                src="https://d3dvldql7ksohz.cloudfront.net/000_clients/68998/page/68998M04CJmQn.jpg"
+                alt="user-image"
+              />
+              <h4 class="review-user-name">Sarah Thompson</h4>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-quote"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z"
+                />
+              </svg>
+              <p>
+                &#8220; Absolutely loved the food! The flavors were outstanding,
+                and the presentation was top-notch. Will definitely be ordering
+                again! &#8221;
+              </p>
+            </div>
+            <div class="col review-card">
+              <img
+                class="review-user-image"
+                src="https://plus.college.indiana.edu/images/profiles/profiles-768x768/assistant.jpg"
+                alt="user-image"
+              />
+              <h4 class="review-user-name">John Anderson</h4>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-quote"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z"
+                />
+              </svg>
+              <p>
+                &#8220; The online ordering process was seamless, and the
+                delivery was right on time. The meal was delicious and exceeded
+                my expectations. Highly recommended! &#8221;
+              </p>
+            </div>
+            <div class="col review-card">
+              <img
+                class="review-user-image"
+                src="https://img.cambridgeweightplan.com/images/consultants/32271_104_660x810.jpg"
+                alt="user-image"
+              />
+              <h4 class="review-user-name">Emily Roberts</h4>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-quote"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z"
+                />
+              </svg>
+              <p>
+                &#8220; I've been ordering from this website for a while now,
+                and every time I'm impressed by the quality of the food. It's my
+                go-to for a quick and satisfying meal. &#8221;
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- FAQ Section -->
+        <div class="faq-section">
+          <h2 class="mt-4 font-weight-bold mb-5">
+            Got Questions? We Have Answers.
+          </h2>
+          <div
+            class="faq-list"
+            id="accordion1"
+            role="tablist"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <div class="card">
+              <div class="card-header" role="tab" id="headingOne1">
+                <h5
+                  class="mb-0"
+                  data-toggle="collapse"
+                  href="#collapseOne1"
+                  role="button"
+                  aria-expanded="true"
+                  aria-controls="collapseOne1"
+                >
+                  <a class="faq-title">How do I place an order?</a>
+                </h5>
+              </div>
+              <div
+                id="collapseOne1"
+                class="collapse show"
+                role="tabpanel"
+                aria-labelledby="headingOne1"
+                data-parent="#accordion1"
+              >
+                <div class="card-body">
+                  Find out how to easily place an order on our website. We'll
+                  guide you through the steps, from selecting your desired items
+                  to completing the checkout process, ensuring a smooth and
+                  convenient ordering experience.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" role="tab" id="headingTwo1">
+                <h5
+                  class="mb-0"
+                  data-toggle="collapse"
+                  href="#collapseTwo1"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo1"
+                >
+                  <a class="collapsed faq-title"
+                    >What are your delivery options?</a
+                  >
+                </h5>
+              </div>
+              <div
+                id="collapseTwo1"
+                class="collapse faq-title"
+                role="tabpanel"
+                aria-labelledby="headingTwo1"
+                data-parent="#accordion1"
+              >
+                <div class="card-body">
+                  Discover the various delivery options available to suit your
+                  needs. Whether you prefer standard delivery or express
+                  delivery, we offer flexible choices to ensure your order
+                  arrives promptly and conveniently to your desired location.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" role="tab" id="headingThree1">
+                <h5
+                  class="mb-0"
+                  data-toggle="collapse"
+                  href="#collapseThree1"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="collapseThree1"
+                >
+                  <a class="collapsed">Can I customize my order?</a>
+                </h5>
+              </div>
+              <div
+                id="collapseThree1"
+                class="collapse"
+                role="tabpanel"
+                aria-labelledby="headingThree1"
+                data-parent="#accordion1"
+              >
+                <div class="card-body">
+                  Learn about our customization options and how you can
+                  personalize your order to meet your preferences. From
+                  selecting specific ingredients to accommodating dietary
+                  requirements, we strive to make your meal just the way you
+                  like it.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" role="tab" id="headingThree1">
+                <h5
+                  class="mb-0"
+                  data-toggle="collapse"
+                  href="#collapseFour1"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="collapseFour1"
+                >
+                  <a class="collapsed">What is your refund policy?</a>
+                </h5>
+              </div>
+              <div
+                id="collapseFour1"
+                class="collapse"
+                role="tabpanel"
+                aria-labelledby="headingThree1"
+                data-parent="#accordion1"
+              >
+                <div class="card-body">
+                  Understand our refund policy to ensure complete satisfaction.
+                  We outline the conditions under which refunds are eligible and
+                  the steps you need to take to initiate the refund process,
+                  ensuring transparency and peace of mind for our valued
+                  customers.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Contact Section -->
+        <div id="contact" class="contact-section">
+          <h2 class="mt-4 font-weight-bold mb-5">Get in Touch</h2>
+          <div class="row">
+            <div
+              class="col-xl-6 contact-image"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <img src="images/contact-us.svg" class="img-fluid" alt="" />
+            </div>
+            <div class="col-xl-6" data-aos="fade-up" data-aos-duration="1000">
+              <form>
+                <div class="form-group">
+                  <label for="exampleInputNAme">Full Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleInputName"
+                    placeholder="Enter your full name..."
+                  />
+                  <label for="exampleInputEmail">Email address</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleInputEmail"
+                    placeholder="Enter your email address..."
+                  />
+                  <small id="emailHelp1" class="form-text text-muted"
+                    >We'll never share your email with anyone else.</small
+                  >
+                  <label for="exampleInputMessage">Message</label>
+                  <textarea
+                    class="form-control"
+                    id="textAreaExample1"
+                    rows="4"
+                    placeholder="Type your message here..."
+                  ></textarea>
+                </div>
+
+                <button
+                  class="btn btn-main my-2 my-sm-0 rounded-pill"
+                  type="submit"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi mr-1 bi-send"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z"
+                    />
+                  </svg>
+                  Submit
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- Newsletter -->
+        <div class="newsletter-section">
+          <div class="row">
+            <div class="col-lg-8">
+              <h2 class="newsletter-title">
+                Join Our Newsletter for Delicious Updates
+              </h2>
+              <form class="newsletter-form">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Enter your email address..."
+                />
+
+                <button
+                  class="btn btn-main my-2 mr-2 my-sm-0 rounded-pill"
+                  type="button"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi mr-1 bi-envelope-check"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2H2Zm3.708 6.208L1 11.105V5.383l4.708 2.825ZM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2-7-4.2Z"
+                    />
+                    <path
+                      d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-1.993-1.679a.5.5 0 0 0-.686.172l-1.17 1.95-.547-.547a.5.5 0 0 0-.708.708l.774.773a.75.75 0 0 0 1.174-.144l1.335-2.226a.5.5 0 0 0-.172-.686Z"
+                    />
+                  </svg>
+                  Subscribe
+                </button>
+              </form>
+              <small id="emailHelp1" class="form-text text-muted"
+                >We'll never share your email with anyone else.</small
+              >
+              <p class="newsletter-info">
+                Stay connected for delicious updates, exclusive promotions, and
+                mouthwatering deals. Sign up now to receive the latest culinary
+                news, special offers, and more directly to your inbox.
+              </p>
+            </div>
+            <div class="col-lg-4 newsletter-img-container">
+              <img
+                class="img-newsletter img-fluid"
+                src="./images/women-mobile.svg"
+                alt="women-mobile-img"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="w-100">
+        <div class="footer">
+          <div class="footer-section flex-grow-1 mb-3">
+            <img src="images/logo.png" alt="FoodExpress-Logo" height="40" />
+            <div class="dev-info">
+              <span
+                >Designed and developed by
+                <a
+                  rel="noopener"
+                  class="dev"
+                  href="https://lakshanrukantha.github.io/"
+                  target="_blank"
+                  >Lakshan Rukantha</a
+                ></span
+              >
+              <span>Software Engineering Undergraduate</span>
+              <span
+                ><a rel="noopener" href="https://nsbm.ac.lk" target="_blank"
+                  >NSBM Green University</a
+                ></span
+              >
+            </div>
+          </div>
+
+          <div class="footer-section flex-grow-1">
+            <h6>Quick Links</h6>
+            <ul>
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#">About</a>
+              </li>
+              <li>
+                <a href="#">Meals</a>
+              </li>
+              <li>
+                <a href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-section flex-grow-1">
+            <h6>Support</h6>
+            <ul>
+              <li>
+                <a href="#">FAQ</a>
+              </li>
+              <li>
+                <a href="#">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="#">Customer Support</a>
+              </li>
+              <li>
+                <a href="#">Terms of Service</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr class="w-100 bg-light" height="2" />
+        <div class="footer-end">
+          <span>Copyright &copy; 2023 | All rights reserved.</span>
+
+          <span>Cookies</span>
+        </div>
+      </footer>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.4.1.js"></script>
+    <!-- AOS Initialize -->
+    <script>
+      AOS.init({
+        once: true,
+      });
+    </script>
+  </body>
+</html>
